@@ -7,6 +7,13 @@ pub fn bigger(a: i32, b:i32) -> i32 {
     // - another function call
     // - additional variables
     // Scroll down for hints.
+    if a > b {
+        a
+    } else if b > a {
+        b
+    } else {
+        0
+    }
 }
 
 // Don't mind this for now :)

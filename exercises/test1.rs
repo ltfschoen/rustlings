@@ -8,7 +8,19 @@
 // the price of an order of apples given the order amount. No hints this time!
 
 // Put your function here!
-// fn ..... {
+fn calculateprice(qty: i32) -> i32 {
+    const PRICE_PER_APPLE: i32 = 2;
+
+    let mut price_total: i32 = 0;
+
+    if qty > 40 {
+        price_total = qty * PRICE_PER_APPLE/2;
+    } else {
+        price_total = qty * PRICE_PER_APPLE;
+    }
+
+    price_total
+}
 
 // Don't modify this function!
 #[test]

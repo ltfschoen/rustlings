@@ -3,7 +3,7 @@
 // Scroll down for hints!
 
 fn main() {
-    let a = ???
+    let a: Vec<i32> = vec![1, 2];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");

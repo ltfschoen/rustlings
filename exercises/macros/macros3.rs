@@ -1,6 +1,7 @@
 // macros3.rs
 // Make me compile, without taking the macro out of the module! Scroll down for hints :)
 
+#[macro_export]
 mod macros {
     macro_rules! my_macro {
         () => {
@@ -9,8 +10,10 @@ mod macros {
     }
 }
 
+use macros;
+
 fn main() {
-    my_macro!();
+    macros::my_macro!();
 }
 
 
